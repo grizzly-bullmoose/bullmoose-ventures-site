@@ -83,7 +83,7 @@ body {
    * replace this file in your repository, the hero will update
    * automatically.
    */
-  background-image: url('assets/hero.jpg');
+  background-image: url('hero.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
