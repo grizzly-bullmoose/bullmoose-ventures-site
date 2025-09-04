@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You – BullMoose Ventures</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <div class="brand">
+          <a href="/" class="logo">BullMoose <span>Ventures</span></a>
+        </div>
+      </nav>
+    </header>
+    <main class="thanks-page" style="padding: 6rem 1rem; text-align: center;">
+      <h1>Thank you</h1>
+      <p>
+        We’ve received your message and will be in touch shortly. We appreciate
+        your interest in partnering with BullMoose Ventures.
+      </p>
+      <a href="/" class="btn-primary" style="margin-top: 2rem;">Back to home</a>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> BullMoose Ventures. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
