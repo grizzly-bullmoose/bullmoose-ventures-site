@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BullMoose Ventures</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <div class="brand">
+          <!-- A simple textual logo. The accent span is styled in CSS -->
+          <a href="#" class="logo">BullMoose <span>Ventures</span></a>
+        </div>
+        <div class="nav-links">
+          <a href="#contact" class="btn-link">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section class="hero">
+        <div class="hero-overlay">
+          <p class="locations">Sundre • Olds • Didsbury — Mountain View County</p>
+          <h1 class="hero-title">Quietly buying local businesses.</h1>
+          <p class="hero-subtitle">
+            We acquire and operate small, essential companies—stewarding people,
+            cashflow, and reputation for the long term.
+          </p>
+          <p class="hero-pledge">
+            Local ownership pledge: if we buy, your business stays owned by
+            local residents of Mountain View County.
+          </p>
+          <a href="#contact" class="btn-primary">Start a confidential conversation</a>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section class="about">
+        <div class="container">
+          <p>
+            <strong>BullMoose Ventures</strong> is based in Mountain View
+            County. We buy with discipline, operate with care, and hold for
+            the long run.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact form section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2>Let’s talk</h2>
+          <p class="contact-intro">
+            Thinking about selling or partnering? Tell us a little about your
+            business and we’ll get back to you.
+          </p>
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden">
+              <label
+                >Don’t fill this out if you're human:
+                <input name="bot-field" /></label
+              >
+            </p>
+            <label>
+              Your name
+              <input type="text" name="name" placeholder="e.g. Jane Doe" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@company.com" required />
+            </label>
+            <label>
+              Phone (optional)
+              <input type="tel" name="phone" placeholder="555-555-5555" />
+            </label>
+            <label>
+              Business and location
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Briefly describe your business and where it’s located"
+                required
+              ></textarea>
+            </label>
+            <button type="submit" class="btn-primary">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> BullMoose Ventures. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      // Populate current year in footer
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
